@@ -1,0 +1,1 @@
+Coding Project 02: I will build a Product Dashboard for a business using HTML, CSS, and JavaScript. The dashboard will fetch and display product data from an external API. 
