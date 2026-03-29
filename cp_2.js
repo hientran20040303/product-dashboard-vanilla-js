@@ -1,5 +1,6 @@
 const apiURL = 'https://www.course-api.com/javascript-store-products';
 
+// Retrieve data using fetch() and .catch
 function fetchProductsThen() {
     fetch(apiURL)
         .then(response => {
@@ -17,6 +18,7 @@ function fetchProductsThen() {
         });
 }
 
+// Step 4
 async function fetchProductsAsync() {
     try {
         const response = await fetch(apiURL);
@@ -62,5 +64,6 @@ function handleError(error) {
     container.innerHTML = `<p class="error">An error occurred: ${error.message}</p>`;
 }
 
+// Call functions
 fetchProductsThen();
 fetchProductsAsync();
