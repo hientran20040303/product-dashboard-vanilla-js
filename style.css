@@ -80,6 +80,40 @@ nav a:hover { color: var(--orange); }
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 102, 0, 0.2);
+    border-color: var(--orange);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    filter: grayscale(20%);
+    transition: 0.3s;
+}
+
+.product-card:hover img {
+    filter: grayscale(0%);
+}
+
+.product-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: var(--orange);
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+.product-card p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--white);
+}
+
+
 @media (max-width: 768px) {
     #cta-headline { font-size: 2.5rem; }
     header { flex-direction: column; gap: 15px; }
